@@ -1,0 +1,49 @@
+{
+    "name": "laramate/composite",
+    "description": "Laramate Code Composite Tool for Laravel",
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Laramate",
+            "email": "coding@laramate.de",
+            "homepage": "https://www.laramate.de/",
+            "role": "Team"
+        },
+        {
+            "name": "Tobi Kivelip",
+            "email": "tkivelip@gmail.com",
+            "homepage": "https://www.laramate.de/",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "5.6.*|5.7.*|5.8.*|6.*",
+        "laramate/facade-mapper": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laramate\\Composite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laramate\\Composite\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laramate\\Composite\\Providers\\CompositeProvider"
+            ]
+        }
+    }
+}
