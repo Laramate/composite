@@ -1,6 +1,6 @@
 {
     "name": "laramate/composite",
-    "description": "Laramate Code Composite Tool for Laravel",
+    "description": "Code Composite Tools for Laravel",
     "license": "MIT",
     "type": "package",
     "authors": [
@@ -13,7 +13,7 @@
         {
             "name": "Tobi Kivelip",
             "email": "tkivelip@gmail.com",
-            "homepage": "https://www.laramate.de/",
+            "homepage": "https://github.com/tkivelip",
             "role": "Developer"
         }
     ],
@@ -21,7 +21,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.2",
-        "laravel/framework": "5.6.*|5.7.*|5.8.*|6.*",
+        "laravel/framework": "5.6.*|5.7.*|5.8.*|6.*|7.*",
         "laramate/facade-mapper": "^1.2",
         "laramate/support": "^1.1"
     },
