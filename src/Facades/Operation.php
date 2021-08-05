@@ -2,7 +2,7 @@
 
 namespace Laramate\Composite\Facades;
 
-use Illuminate\Support\Facades\Facade;
+use Laramate\Composite\Support\FacadeMapper\Facades\Facade;
 
 class Operation extends Facade
 {

@@ -2,7 +2,7 @@
 
 namespace Laramate\Composite\Facades;
 
-use Laramate\FacadeMapper\Facades\Facade;
+use Laramate\Composite\Support\FacadeMapper\Facades\Facade;
 
 class Feature extends Facade
 {
