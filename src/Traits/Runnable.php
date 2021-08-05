@@ -4,7 +4,7 @@ namespace Laramate\Composite\Traits;
 
 use Laramate\Composite\Contracts\Task;
 use Laramate\Composite\Exceptions\CompositeException;
-use Laramate\FacadeMapper\Traits\HasMappedCalls;
+use Laramate\Composite\Support\FacadeMapper\Traits\HasMappedCalls;
 use Throwable;
 
 trait Runnable
@@ -13,9 +13,6 @@ trait Runnable
 
     /**
      * Run task.
-     *
-     * @param string $class
-     * @param array  $params
      *
      * @throws CompositeException
      *
@@ -50,8 +47,6 @@ trait Runnable
     }
 
     /**
-     * @param Task $task
-     *
      * @throws CompositeException
      *
      * @return mixed
@@ -72,8 +67,6 @@ trait Runnable
     /**
      * Actions before handling the task.
      *
-     * @param Task $task
-     *
      * @return $this
      */
     private function beforeTask(Task &$task): self
@@ -87,8 +80,6 @@ trait Runnable
 
     /**
      * Actions after the task.
-     *
-     * @param Task $task
      *
      * @return $this
      */
