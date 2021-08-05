@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramate\FacadeMapper\Traits;
+namespace Laramate\Composite\Support\FacadeMapper\Traits;
 
 use Laramate\FacadeMapper\Exceptions\InvalidParameterException;
 use ReflectionException;

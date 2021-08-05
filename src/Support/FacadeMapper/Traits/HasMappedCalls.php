@@ -1,10 +1,11 @@
 <?php
 
-namespace Laramate\FacadeMapper\Traits;
+namespace Laramate\Composite\Support\FacadeMapper\Traits;
 
 use Illuminate\Container\Container;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\Str;
-use Laramate\FacadeMapper\Exceptions\InvalidParameterException;
+use Laramate\Composite\Exceptions\InvalidParameterException;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionParameter;
@@ -58,15 +59,16 @@ trait HasMappedCalls
     }
 
     /**
-     * @param string          $className
-     * @param string          $method
-     * @param array           $arguments
+     * @param string $className
+     * @param string $method
+     * @param array $arguments
      * @param ReflectionClass $reflection
      *
-     * @throws InvalidParameterException
-     * @throws ReflectionException
-     *
      * @return object
+     * @throws ReflectionException*
+     * @throws BindingResolutionException
+     *
+     * @throws InvalidParameterException
      */
     protected static function mappedMethodCall(string $className, string $method, array $arguments, ReflectionClass $reflection): object
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramate\Support\Eloquent;
+namespace Laramate\Composite\Support\Eloquent;
 
 use Illuminate\Support\Str;
 

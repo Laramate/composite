@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramate\FacadeMapper\Exceptions;
+namespace Laramate\Composite\Exceptions;
 
 use Exception;
 

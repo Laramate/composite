@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramate\Support\Data\Traits;
+namespace Laramate\Composite\Support\Data\Traits;
 
 trait ObjectArrayAccess
 {

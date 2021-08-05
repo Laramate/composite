@@ -1,6 +1,6 @@
 <?php
 
-namespace Laramate\Support\Data;
+namespace Laramate\Composite\Support\Data;
 
 class Collection extends \Illuminate\Support\Collection
 {
